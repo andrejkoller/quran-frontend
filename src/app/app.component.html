@@ -1,0 +1,36 @@
+<div class="navigation">
+  <div class="menu" [class.active]="this.navigationService.menuActive === true">
+    <app-menu></app-menu>
+  </div>
+  <div
+    class="chapterMenu"
+    [class.active]="this.navigationService.chapterMenuActive === true"
+  >
+    <app-chapter-menu></app-chapter-menu>
+  </div>
+</div>
+<div
+  class="main"
+  [ngStyle]="{
+    opacity:
+      this.navigationService.menuActive === true ||
+      this.navigationService.chapterMenuActive === true
+        ? '0.1'
+        : '1'
+  }"
+>
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <div class="content-footer-wrap">
+    <div class="content">
+      <div class="topIcon" (click)="scrollToTop()">
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

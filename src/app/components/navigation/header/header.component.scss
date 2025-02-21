@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+
+    .header-content {
+      display: flex;
+      flex-direction: row;
+      padding-left: 42px;
+      padding-right: 42px;
+
+      .header-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        gap: 1rem;
+
+        .header-burger {
+          display: flex;
+
+          mat-icon {
+            cursor: pointer;
+            padding: 8px;
+
+            &:hover {
+              background-color: var(--primary-color);
+              color: #ffffff;
+              border-radius: 999px;
+            }
+          }
+        }
+
+        .header-title {
+          display: flex;
+          flex-direction: row;
+
+          h1 {
+            font-size: 2rem;
+            font-weight: 100;
+            font-family: "Amiri";
+            margin: 0;
+
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      .header-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        gap: 1rem;
+
+        .header-chapters {
+          display: flex;
+
+          mat-icon {
+            cursor: pointer;
+            padding: 8px;
+
+            &:hover {
+              background-color: var(--primary-color);
+              color: #ffffff;
+              border-radius: 999px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

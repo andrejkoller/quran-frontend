@@ -1,0 +1,75 @@
+<div class="home-container">
+  <div class="home-content">
+    <div class="search-container">
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          #input
+          placeholder="What do you want to read?"
+          (keyup)="filterSurahs($event)"
+        />
+        <button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="chapter-settings">
+      <div class="tags-container">
+        <div>
+          <span>Surah</span>
+        </div>
+      </div>
+      <div class="sort-container" (click)="sortSurahs()">
+        @if (ascending) {
+        <span>Sort by: Ascending</span>
+        <span><mat-icon>keyboard_arrow_up</mat-icon></span>
+        } @else {
+        <span>Sort by: Descending</span>
+        <span><mat-icon>keyboard_arrow_down</mat-icon></span>
+        }
+      </div>
+    </div>
+    <div class="chapter-container">
+      <div
+        class="loading-container"
+        [class.active]="filteredChapters === null || chapters.length === 0"
+      >
+        <app-loading-spinner></app-loading-spinner>
+      </div>
+      <div
+        class="chapter"
+        *ngFor="let chapter of filteredChapters"
+        (click)="selectChapter(chapter)"
+      >
+        <mat-card>
+          <mat-card-content>
+            <div class="chapter-card-wrap">
+              <div class="chapter-number">
+                <p>{{ chapter.chapterNumber }}</p>
+              </div>
+              <div class="chapter-col-wrap">
+                <div class="chapter-first-col">
+                  <div>
+                    <p>{{ chapter.surahName }}</p>
+                  </div>
+                  <div>
+                    <span>{{ chapter.surahNameTranslation }}</span>
+                  </div>
+                </div>
+                <div class="chapter-second-col">
+                  <div>
+                    <p>{{ chapter.surahNameArabic }}</p>
+                  </div>
+                  <div>
+                    <span>{{ chapter.totalAyah }} Ayahs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

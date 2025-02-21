@@ -1,0 +1,143 @@
+:host {
+  height: 100%;
+  width: 100%;
+
+  .audio-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+
+    audio {
+      display: flex;
+      width: 100%;
+    }
+
+    audio::-webkit-media-controls-enclosure {
+      border-radius: 0;
+    }
+  }
+
+  .chapter-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+    .chapter-content {
+      display: flex;
+      flex-direction: column;
+
+      .loading-container {
+        position: fixed;
+        left: 45%;
+        z-index: 2;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .chapter-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          margin: 0;
+        }
+
+        p {
+          font-family: "Montserrat-Regular";
+        }
+      }
+
+      .reciter-audio-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 42px;
+
+        .reciter-changer {
+          width: 25%;
+
+          mat-form-field {
+            width: 100%;
+          }
+        }
+
+        .audio-button-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          button {
+            background-color: var(--primary-color);
+          }
+        }
+      }
+
+      .ayah {
+        div {
+          padding-top: 16px;
+
+          span {
+            font-family: "Montserrat-Regular";
+            padding: 8px;
+            border-radius: 999px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--primary-color);
+              color: #ffffff;
+            }
+          }
+        }
+
+        p.ayah-arabic {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          font-size: 2rem;
+          margin: 0;
+          padding: 42px 0;
+        }
+
+        p.ayah-english {
+          padding: 42px 0;
+          border-bottom: 1px solid var(--border-color);
+          font-family: "Montserrat-Regular";
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.loading-container.active {
+  display: flex !important;
+}
+
+.ayah.active {
+  background-color: var(--primary-color);
+  color: var(--ayah-active-color);
+  font-weight: bold;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+::ng-deep div.mat-mdc-select-panel {
+  background-color: #ffffff !important;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper,
+.mat-mdc-form-field-bottom-align::before {
+  display: none !important;
+}

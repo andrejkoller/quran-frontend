@@ -1,0 +1,15 @@
+<div class="help-container">
+  <div class="help-title">
+    <h1>
+      <span>How can we help you?</span>
+    </h1>
+  </div>
+  <div class="help-content">
+    <div class="help-grid-row">
+      <div *ngFor="let point of points">
+        <p class="help-p-title">{{ point.title }}</p>
+        <p>{{ point.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="settings-container">
+  <div class="settings-title">
+    <h1>
+      <span>Preferences</span>
+    </h1>
+  </div>
+  <div class="settings-content">
+    <div class="font-container">
+      <mat-card>
+        <mat-card-content>
+          <div class="font-title">
+            <p>
+              <span>Quran font</span>
+            </p>
+          </div>
+          <div class="font-changer">
+            <div class="font-size">
+              <span>Font size</span>
+              <div class="font-control">
+                <button
+                  [disabled]="saveFontSize === 16"
+                  (click)="setDecreasedFontSize()"
+                >
+                  <span>-</span>
+                </button>
+                <span>{{ saveFontSize }}</span>
+                <button
+                  [disabled]="saveFontSize >= 24"
+                  (click)="setIncreasedFontSize()"
+                >
+                  <span>+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="language-container">
+      <mat-card>
+        <mat-card-content>
+          <div class="language-title">
+            <p>
+              <span>System language</span>
+            </p>
+          </div>
+          <div class="language-changer">
+            <mat-form-field>
+              <mat-label>Select your language</mat-label>
+              <mat-select
+                [value]="selectedLanguage"
+                (selectionChange)="changeLanguage($event.value)"
+              >
+                <mat-option value="english">English</mat-option>
+                <mat-option value="german">German</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="theme-container">
+      <mat-card>
+        <mat-card-content>
+          <div class="theme-title">
+            <p>
+              <span>Theme mode</span>
+            </p>
+          </div>
+          <div class="theme-switcher">
+            <mat-form-field>
+              <mat-label>Select your theme</mat-label>
+              <mat-select
+                [value]="selectedTheme"
+                (selectionChange)="changeTheme($event.value)"
+              >
+                <mat-option value="auto">Auto</mat-option>
+                <mat-option value="light">Light</mat-option>
+                <mat-option value="sepia">Sepia</mat-option>
+                <mat-option value="dark">Dark</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

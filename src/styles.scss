@@ -1,0 +1,67 @@
+@import "./themes/theme-settings";
+@import "ngx-toastr/toastr";
+
+@font-face {
+  font-family: Amiri;
+  src: url(/assets/fonts/amiri/Amiri-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(/assets/fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(/assets/fonts/montserrat/Montserrat-Medium.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+:host .mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: var(--primary-color) !important;
+}
+
+::ng-deep .toast-success {
+  bottom: 12px !important;
+}

@@ -1,0 +1,70 @@
+<div class="footer-container">
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="footer-title">
+        <h1>
+          <a routerLink="/"><span>Quran</span></a>
+        </h1>
+      </div>
+      <div class="footer-p">
+        <span>Read, study, and learn The Noble Quran.</span>
+        <p>
+          Quran is a Sadaqah Jariyah. We hope to make it easy for everyone to
+          read, study, and learn The Noble Quran. The Noble Quran has many names
+          including Al-Quran Al-Kareem, Al-Ketab, Al-Furqan, Al-Maw'itha,
+          Al-Thikr, and Al-Noor.
+        </p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-links-wrap">
+        <div class="footer-links-title">Navigate</div>
+        <div class="footer-links">
+          <a routerLink="/">
+            <span>Home</span>
+          </a>
+          <a routerLink="/about">
+            <span>About Us</span>
+          </a>
+          <a routerLink="/reciters">
+            <span>Reciters</span>
+          </a>
+          <a routerLink="/settings">
+            <span>Settings</span>
+          </a>
+          <a routerLink="/help">
+            <span>Help</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-settings-wrap">
+        <div class="language-changer">
+            <mat-form-field class="language-field">
+              <mat-label>Select your language</mat-label>
+              <mat-select
+                [value]="selectedLanguage"
+                (selectionChange)="changeLanguage($event.value)"
+              >
+                <mat-option value="english">English</mat-option>
+                <mat-option value="german">German</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="theme-switcher">
+            <mat-form-field class="theme-field">
+              <mat-label>Select your theme</mat-label>
+              <mat-select
+                [value]="selectedTheme"
+                (selectionChange)="changeTheme($event.value)"
+              >
+                <mat-option value="auto">Auto</mat-option>
+                <mat-option value="light">Light</mat-option>
+                <mat-option value="sepia">Sepia</mat-option>
+                <mat-option value="dark">Dark</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

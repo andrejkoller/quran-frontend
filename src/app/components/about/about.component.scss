@@ -1,0 +1,72 @@
+@media all and (max-width: 768px) {
+  .about-quran {
+    .about-title {
+      h1 {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .about-content {
+      p {
+        font-size: 1rem !important;
+      }
+
+      ul {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .about-us {
+    .about-title {
+      h1 {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .about-content {
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+:host {
+  min-height: 100vh;
+  width: 100%;
+
+  .about-container {
+    .about-title {
+      display: flex;
+      flex-direction: row;
+      height: 64px;
+      padding-left: 42px;
+      padding-right: 42px;
+
+      h1 {
+        font-size: 2rem;
+        font-family: "Montserrat-Regular";
+        margin: 0;
+      }
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 84px);
+      margin-left: auto;
+      margin-right: auto;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+      ul {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<div class="audio-container" *ngIf="audioSurah.length">
+  <audio controls #audioPlayer (ended)="onAudioEnded()"></audio>
+</div>
+<div class="chapter-container">
+  <div class="chapter-content">
+    <div class="loading-container" [class.active]="surah === null || undefined">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+    <div class="chapter-title">
+      <h2>{{ this.surah?.surahNameArabic }}</h2>
+      <p>{{ this.surah?.surahNameTranslation }}</p>
+    </div>
+    <div class="reciter-audio-wrap">
+      <div class="reciter-changer">
+        <mat-form-field class="reciter-field" *ngIf="reciters">
+          <mat-label>Select your reciter</mat-label>
+          <mat-select
+            [value]="selectedReciter"
+            (selectionChange)="changeReciter($event.value)"
+          >
+            <mat-option *ngFor="let reciter of reciters" [value]="reciter.id">{{
+              reciter.name
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="audio-button-container">
+        <button mat-flat-button (click)="startAudioRecitation()">
+          <mat-icon>play_arrow</mat-icon>Play Audio
+        </button>
+      </div>
+    </div>
+    <div
+      *ngFor="let ayah of surah?.ayahs; let i = index"
+      #ayah
+      class="ayah"
+      [class.active]="i === currentIndex"
+    >
+      <div>
+        <span>{{ this.surah?.surahNo }}:{{ i + 1 }}</span>
+      </div>
+      <div>
+        <p class="ayah-arabic">
+          {{ ayah?.arabic }}
+        </p>
+        <p class="ayah-english" [ngStyle]="{ 'font-size.px': savedFontSize }">
+          {{ ayah?.english }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="about-container">
+  <div class="about-quran">
+    <div class="about-title">
+      <h1>
+        <span>About the Quran</span>
+      </h1>
+    </div>
+    <div class="about-content">
+      <p>
+        The Quran is the holy book of Islam and is regarded by Muslims as the
+        unaltered word of God (Allah), revealed through the Prophet Muhammad. It
+        consists of 114 chapters, known as Surahs, which are further divided
+        into verses (Ayat).
+      </p>
+      <ul>
+        <li *ngFor="let point of points">
+          {{ point.title }}: {{ point.description }}
+        </li>
+      </ul>
+      <p>
+        The Quran was transmitted orally during Muhammad's lifetime and compiled
+        shortly after his death. Muslims view its preservation and authenticity
+        as a testament to divine care.
+      </p>
+    </div>
+  </div>
+  <div class="about-us">
+    <div class="about-title">
+      <h1>
+        <span>About the project</span>
+      </h1>
+    </div>
+    <div class="about-content">
+      <p>
+        This project is dedicated to providing the best possible resources and
+        tools to study the Quran in depth, allowing you to explore its message,
+        context, and teachings with clarity and understanding.
+      </p>
+    </div>
+  </div>
+</div>

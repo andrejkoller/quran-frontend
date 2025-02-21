@@ -1,0 +1,19 @@
+<div class="header-container">
+  <div class="header-content">
+    <div class="header-left">
+      <div class="header-burger">
+        <mat-icon (click)="triggerMenu()">menu</mat-icon>
+      </div>
+      <div class="header-title">
+        <h1>
+          <a routerLink="/"><span>Quran</span></a>
+        </h1>
+      </div>
+    </div>
+    <div class="header-right" *ngIf="this.isRouteActive('/quran')">
+      <div class="header-chapters">
+        <mat-icon (click)="triggerChapterMenu()">library_books</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
