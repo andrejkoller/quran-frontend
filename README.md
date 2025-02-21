@@ -1,67 +1,56 @@
-<div align="left">
-  <h1>Quran Frontend ☪️🕌</h1>
-</div>
-<div align="left">
-  <h3>ABOUT THIS PROJECT</h3>
-</div>
-<div align="left">
-  <p>
-    I built a Quran project using Angular, making API requests to https://quranapi.pages.dev to fetch and display individual chapters with a structured and styled layout.
-  </p>
-</div>
 <div align="center">
   <div>
-    <img src="https://github.com/user-attachments/assets/31ce4ea4-76ec-4dea-b4b4-9d2f4b959eca">
+    <img src="https://github.com/user-attachments/assets/955577e9-500f-4066-8196-9e0a1b949341">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/5446aae2-c911-4fb2-97b4-ed9a325c19e8">
+    <img src="https://github.com/user-attachments/assets/57620b18-9926-4e38-8b26-d24f0fb58364">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/55643068-54a9-46d5-b587-3f8d36d15d39">
+    <img src="https://github.com/user-attachments/assets/8c01cf32-0d91-4b28-a5b1-be5ddc2a0ceb">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/e208b9bc-8aa2-4bca-999d-9f118598d7c2">
+    <img src="https://github.com/user-attachments/assets/74ae6036-346d-4545-a4de-bc64c887f412">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/181da848-d297-4d98-814c-d050ff2f9465">
+    <img src="https://github.com/user-attachments/assets/c299a35a-956a-4703-9cf7-142ce3360459">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/25185129-f5dc-4231-a262-8e1518c027f9">
+    <img src="https://github.com/user-attachments/assets/46f270a4-bb00-425a-a8b4-0bc6fb77942b">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/8e2c698c-c630-4f22-a8dc-0d69a919c150">
+    <img src="https://github.com/user-attachments/assets/41261143-1031-49d0-9760-4f8d607c91fe">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/ac12933e-f539-4fa7-a91b-7934628f2622">
+    <img src="https://github.com/user-attachments/assets/e2047e0c-8521-4602-a350-c4c125aad00e">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/1868a876-dc48-487c-a11f-81e20f617b85">
+    <img src="https://github.com/user-attachments/assets/560d57c2-5d36-4f30-8ce6-a64fa1aeccb2">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/c15c395a-f4ce-4e79-a89f-10b08856fd7e">
+    <img src="https://github.com/user-attachments/assets/ea586b3b-2d86-4974-9748-0ac874a6d1b6">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/557ddc1c-417d-4e1d-bdf1-876c8d774251">
+    <img src="https://github.com/user-attachments/assets/b85263ea-22f7-45b0-92c7-4e86639ad206">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/dcfb2594-7520-4d52-9446-70b103e6bf4d">
+    <img src="https://github.com/user-attachments/assets/f2ff2a21-f7cf-40ab-9675-390205e3e919">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/5882f68a-38ed-40d6-a265-b96232d8cd61">
+    <img src="https://github.com/user-attachments/assets/64f3cb2d-4f11-43e8-b078-2f887241d6c0">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/9f092084-c1fc-4147-bb2a-0ab352e9f195">
+    <img src="https://github.com/user-attachments/assets/087fbf5d-e00b-443b-bad4-15d0f0492f47">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/f097738a-9878-4455-9b0d-3caa0f605e14">
+    <img src="https://github.com/user-attachments/assets/524f99f2-797e-4f14-a956-da27b27aecd3">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/0f876e0b-1672-430b-879f-03c0d0c03e68">
+    <img src="https://github.com/user-attachments/assets/9771e923-be06-426a-8dd4-76c3bd184d2a">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/330ce15b-8244-43a3-96c4-7f492afad156">
+    <img src="https://github.com/user-attachments/assets/a346a5f1-d52e-4915-8239-e7df52c03ae6">
   </div>
   <div>
-    <img src="https://github.com/user-attachments/assets/f5800868-122a-4686-b48c-5aa65359a30b">
+    <img src="https://github.com/user-attachments/assets/347c81e1-d4db-43b6-aabe-f6f9f5d46dac">
   </div>
 </div>
